@@ -1,0 +1,34 @@
+
+.header-wrap {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 45.05vh;
+    position: absolute;
+  }
+  .second-part {
+    width: 80%;
+    margin: auto;
+  }
+  .article-link {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  .second-part-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-wrap {
+      height: 22vh;
+    }
+    .article-link {
+      font-size: 18px;
+    }
+    .second-part {
+      width: 86%;
+    }
+  }
+  
