@@ -1,8 +1,8 @@
-import business3 from "../Public/assets/blog/business3.webp";
-import business4 from "../Public/assets/blog/business4.webp";
-import business1 from "../Public/assets/blog/business1.webp";
-import business2 from "../Public/assets/blog/business2.webp";
-import business5 from "../Public/assets/blog/business5.webp";
+import business3 from "../public/assets/blog/business3.webp";
+import business4 from "../public/assets/blog/business4.webp";
+import business1 from "../public/assets/blog/business1.webp";
+import business2 from "../public/assets/blog/business2.webp";
+import business5 from "../public/assets/blog/business5.webp";
 export const BusinessDemoData = [
   {
     id: 1,
