@@ -6,32 +6,38 @@ import polity5 from "../public/assets/blog/polity5.webp";
 
 export const PoliticsData = [
   {
-    id: 1,
+    id: 'p1',
     title: "Congress too has Adani ties, favoured some corporates: BJP",
     subTitle: `Rahul Gandhi’s attack on the government for allegedly helpin ..`,
     name: "Surendra singh",
     date: "feb 10,2023",
     img: polity1,
+    sections:['politics'],
+    tags:[]
   },
   {
-    id: 2,
+    id: 'p2',
     title: "Shiv Sena's Thackeray faction boycotts parliament debate ",
     subTitle:
       "Uddhav Thackeray's Shiv Sena on Tuesday announced it Motion of Thanks on president' address, claiming the governm ..",
     name: "Divesh Naidu ",
     date: "feb 08, 2023",
     img: polity2,
+    sections:['politics'],
+    tags:[]
   },
   {
-    id: 3,
+    id: 'p3',
     title: "Solving people’s pain greater aspiration than any personal r .",
     subTitle: "Solving such challenges, all at the same time, while pursuin ",
     name: "Samaksh Gupta",
     date: "feb 07, 2023",
     img: polity3,
+    sections:['politics'],
+    tags:[]
   },
   {
-    id: 4,
+    id: 'p4',
     title:
       "PM to Address LS, Reply To President's Motion of Thanks; Adani Remains in Focus in Parliament",
     subTitle:
@@ -39,13 +45,17 @@ export const PoliticsData = [
     name: "Sambuddha Chakraborty",
     date: "feb 09, 2023",
     img: polity4,
+    sections:['politics'],
+    tags:[]
   },
   {
-    id: 5,
+    id: 'p5',
     title: "Shivpal Yadav, Swami Prasad Maurya get key roles in SP’s nat ..",
     subTitle: "The Samajwadi Party (SP) announced its national executive o .. ",
-    name: "Sounak Mitra  ",
+    name: "Sunny Sen",
     date: "feb 05, 2023",
     img: polity5,
+    sections:['politics'],
+    tags:[]
   },
 ];

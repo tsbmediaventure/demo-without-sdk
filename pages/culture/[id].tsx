@@ -7,28 +7,39 @@ import { useRouter } from 'next/router'
 import Link from "next/link";
 
 const CultureArticle = () => {
-  const router = useRouter()
-const [fetchId,setFetchId]=useState('')
-useEffect(()=>{
 
+  const router = useRouter()
   const {id} = router.query as { id: string };
   console.log(id , "id hai")
-  setFetchId(id)
- id && paywallId()
+  const [calledOnce, setCalledOnce]=useState(false)
   
-})
-  console.log(fetchId,"fetchId")
+  
+  
+  useEffect(()=>{
+    console.log(id,'ljhgc')
+   
+    if(id&&!calledOnce){
+      setCalledOnce(true)
+      // console.log(id,'ljhgc')
+      paywallId()
+    }  
+  },[calledOnce,id])
+    
+  
+  
+  
+   const data = CultureData.filter(function (entry) { return entry.id === id; })[0] as {
+      id: string|number;
+      title: string;
+      subTitle: string;
+      name: string;
+      date: string;
+      img: any;
+    };
+  
+    
 
-  
- const data = CultureData[parseInt(fetchId) - 1] as {
-    id: number;
-    title: string;
-    subTitle: string;
-    name: string;
-    date: string;
-    img: any;
-  };
-console.log(data, "data story")
+
   const [paid, setPaid] = useState(false);
 
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
@@ -43,11 +54,9 @@ console.log(data, "data story")
     csc("init", {
       debug: true,
       storyId: data?.id, // your story id here
-      subscriptionUrl: "https://github.com/pricing", // example url, add your subscription url here
       clientId: clientId, // your clientID here
-      screenType: "beta",
-      signInUrl: "https://github.com",
-      accentColor: "red",
+      title:data.title,
+    
       successCallback: async (validationObject: any) => {
         
         setPaid(true);

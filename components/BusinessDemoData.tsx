@@ -48,7 +48,7 @@ export const BusinessDemoData = [
       "Sorry, A Bit Late...: Zomato Founder's Tweet After Paytm's Surprise Operating Profit",
     subTitle:
       "Paytm' stock rose as much as 7.4% yesterday, its biggest intraday jump in two months after the firm posted its first-ever quarterly operating profit as a listed firm.",
-    name: "Sounak Mitra  ",
+    name: "Sunny Sen",
     date: "feb 12, 2023",
     img: business5,
   },

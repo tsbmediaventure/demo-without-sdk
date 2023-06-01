@@ -49,7 +49,7 @@ export const data = [
     title: "India means manufacturing, in the new world order",
     subTitle:
       "With China on a backfoot, many developed countries are looking at India as a credible alternate as the next manufacturing destination.",
-    name: "Sounak Mitra  ",
+    name: "Sunny Sen",
     date: "January 05, 2023",
     img: makeIndia,
   },

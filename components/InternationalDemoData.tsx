@@ -49,7 +49,7 @@ export const InternationalData = [
       "At least 15 killed in Peru landslide, president pledges to speed up help",
     subTitle:
       "The death toll from a massive landslide that struck southern Peru rose to at least 15 on Tuesday after dozens of homes were swallowed up by dirt and mud following heavy rainfall last weekend.",
-    name: "Sounak Mitra  ",
+    name: "Sunny Sen",
     date: "feb 05, 2023",
     img: International5,
   },

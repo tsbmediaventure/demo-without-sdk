@@ -7,27 +7,37 @@ import { useRouter } from 'next/router'
 import Link from "next/link";
 
 const PoliticsArticle = () => {
-  const router = useRouter()
-const [fetchId,setFetchId]=useState('')
+
+const router = useRouter()
+const {id} = router.query as { id: string };
+console.log(id , "id hai")
+const [calledOnce, setCalledOnce]=useState(false)
+
+
+
 useEffect(()=>{
-
-  const {id} = router.query as { id: string };
-  console.log(id , "id hai")
-  setFetchId(id)
- id && paywallId()   
+  console.log(id,'ljhgc')
+ 
+  if(id&&!calledOnce){
+    setCalledOnce(true)
+    // console.log(id,'ljhgc')
+    paywallId()
+  }  
+},[calledOnce,id])
   
-})
-  console.log(fetchId,"fetchId")
 
-  
- const data = PoliticsData[parseInt(fetchId) - 1] as {
-    id: number;
+
+
+ const data = PoliticsData.filter(function (entry) { return entry.id === id; })[0] as {
+    id: string|number;
     title: string;
     subTitle: string;
     name: string;
     date: string;
     img: any;
   };
+
+  
 console.log(data, "data story")
   const [paid, setPaid] = useState(false);
 
@@ -44,11 +54,9 @@ console.log(data, "data story")
     csc("init", {
       debug: true,
       storyId: data?.id, // your story id here
-      subscriptionUrl: "https://github.com/pricing", // example url, add your subscription url here
       clientId: clientId, // your clientID here
-      screenType: "beta",
-      signInUrl: "https://github.com",
-      accentColor: "red",
+      title:data.title,
+    
       successCallback: async (validationObject: any) => {
         
         setPaid(true);
