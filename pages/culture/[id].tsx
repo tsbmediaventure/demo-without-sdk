@@ -53,7 +53,7 @@ const CultureArticle = () => {
     const csc = window._csc as any;
     csc("init", {
       debug: true,
-      storyId: data?.id, // your story id here
+      contentId: data?.id, // your story id here
       clientId: clientId, // your clientID here
       title:data.title,
     

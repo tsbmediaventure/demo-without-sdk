@@ -53,7 +53,7 @@ console.log(data, "data story")
     
     csc("init", {
       debug: true,
-      storyId: data?.id, // your story id here
+      contentId: data?.id, // your story id here
       clientId: clientId, // your clientID here
       title:data.title,
     
