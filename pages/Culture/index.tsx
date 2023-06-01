@@ -1,9 +1,10 @@
 import React from "react";
-import { CultureData } from "./CultureDemoData";
-import classes from "./Culture.module.scss";
+import { CultureData } from "../../components/CultureDemoData";
+import classes from "../../components/Culture.module.scss";
 import Header from "../../components/Header";
 
-import CulturePaid from "./CulturePaid";
+import CulturePaid from "../../components/CulturePaid";
+
 
 const Culture = () => {
   return (

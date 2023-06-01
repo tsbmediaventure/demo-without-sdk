@@ -1,19 +1,19 @@
 import React from "react";
+import style from "./subBlogLarge.module.scss";
 import { useRouter } from "next/router";
-import style from "../../components/subBlogLarge.module.scss";
 
-const BusinessFree = (props: any) => {
+const InternationalFree = (props: any) => {
   const data = props.passData;
   const router = useRouter()
-const handleClick = ((e:any , id : string)=>{
-  router.push(`/Business/${id}`)
+const handleClick = ((e: any , id : string)=>{
+  router.push(`/international/${id}`)
 })
-  
 
+  
   return (
     <div
       className={style["large-blog"]}
-      key={data.id} onClick={(e)=>handleClick(e , data.id)} >
+      key={data.id}  onClick={(e)=> handleClick(e , data.id )}>
       <img src={data.img.src} alt="tvChannels" className={style["cover-img"]} />
       <div className={style["overlay"]}>
         <div className={style["wrap-content"]}>
@@ -29,4 +29,4 @@ const handleClick = ((e:any , id : string)=>{
   );
 };
 
-export default BusinessFree;
+export default InternationalFree;

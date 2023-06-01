@@ -1,9 +1,9 @@
 import React from "react";
-import { PoliticsData } from "./PoliticsDemoData";
-import classes from "./Politics.module.scss";
+import { PoliticsData } from "../../components/PoliticsDemoData";
+import classes from "../../components/Politics.module.scss";
 import Header from "../../components/Header";
 
-import PoliticsPaid from "./PoliticsPaid";
+import PoliticsPaid from "../../components/PoliticsPaid";
 const Politics = () => {
   return (
     <>

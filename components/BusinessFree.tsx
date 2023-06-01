@@ -1,21 +1,19 @@
 import React from "react";
 import { useRouter } from "next/router";
-import style from "../../components/subBlogLarge.module.scss";
+import style from "./subBlogLarge.module.scss";
 
-const CulturePaid = (props: any) => {
-  const router = useRouter()
+const BusinessFree = (props: any) => {
   const data = props.passData;
+  const router = useRouter()
+const handleClick = ((e:any , id : string)=>{
+  router.push(`/business/${id}`)
+})
   
-  const handleClick = (e: any, id: string) => {
-  
-    router.push(`/Culture/${id}`)
-  }
-
 
   return (
     <div
       className={style["large-blog"]}
-      key={data.id} onClick={(e) => handleClick(e, data.id)} >
+      key={data.id} onClick={(e)=>handleClick(e , data.id)} >
       <img src={data.img.src} alt="tvChannels" className={style["cover-img"]} />
       <div className={style["overlay"]}>
         <div className={style["wrap-content"]}>
@@ -31,4 +29,4 @@ const CulturePaid = (props: any) => {
   );
 };
 
-export default CulturePaid;
+export default BusinessFree;

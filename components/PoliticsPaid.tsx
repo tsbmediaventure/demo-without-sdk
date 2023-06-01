@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../components/subBlogLarge.module.scss";
+import style from "./subBlogLarge.module.scss";
 import { useRouter } from "next/router";
 
 const PoliticsPaid = (props: any) => {
@@ -8,7 +8,7 @@ const PoliticsPaid = (props: any) => {
  
 
   const handleClick = (e: any, id: string) => {
-    router.push(`/Politics/${id}`);
+    router.push(`/politics/${id}`);
   };
 
   return (

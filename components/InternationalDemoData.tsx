@@ -1,8 +1,8 @@
-import International1 from "../../public/assets/blog/International1.webp";
-import International2 from "../../public/assets/blog/International2.webp";
-import International3 from "../../public/assets/blog/International3.webp";
-import International4 from "../../public/assets/blog/International4.webp";
-import International5 from "../../public/assets/blog/International5.webp";
+import International1 from "../public/assets/blog/International1.webp";
+import International2 from "../public/assets/blog/International2.webp";
+import International3 from "../public/assets/blog/International3.webp";
+import International4 from "../public/assets/blog/International4.webp";
+import International5 from "../public/assets/blog/International5.webp";
 
 export const InternationalData = [
   {

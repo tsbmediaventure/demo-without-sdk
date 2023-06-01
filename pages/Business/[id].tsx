@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../../components/Header";
 import style from "../../components/Article.module.scss";
-import { BusinessDemoData } from "./BusinessDemoData";
+import { BusinessDemoData } from "../../components/BusinessDemoData";
 import { useRouter } from "next/router";
 import Link from "next/link"
 

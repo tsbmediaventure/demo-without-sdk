@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../../components/Header";
 import style from "../../components/Article.module.scss";
-import { PoliticsData } from "./PoliticsDemoData";
+import { PoliticsData } from "../../components/PoliticsDemoData";
 import { useRouter } from 'next/router'
 import Link from "next/link";
 

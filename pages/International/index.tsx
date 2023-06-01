@@ -1,8 +1,8 @@
 import React from "react";
-import { InternationalData } from "./InternationalDemoData";
-import classes from "./International.module.scss";
+import { InternationalData } from "../../components/InternationalDemoData";
+import classes from "../../components/International.module.scss";
 import Header from "../../components/Header";
-import InternationalFree from "./InternationalFree";
+import InternationalFree from "../../components/InternationalFree";
 
 const International = () => {
   return (

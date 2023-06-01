@@ -1,8 +1,8 @@
-import polity1 from "../../public/assets/blog/polity1.webp";
-import polity2 from "../../public/assets/blog/polity2.webp";
-import polity3 from "../../public/assets/blog/polity3.webp";     
-import polity4 from "../../public/assets/blog/polity4.webp";
-import polity5 from "../../public/assets/blog/polity5.webp";
+import polity1 from "../public/assets/blog/polity1.webp";
+import polity2 from "../public/assets/blog/polity2.webp";
+import polity3 from "../public/assets/blog/polity3.webp";     
+import polity4 from "../public/assets/blog/polity4.webp";
+import polity5 from "../public/assets/blog/polity5.webp";
 
 export const PoliticsData = [
   {

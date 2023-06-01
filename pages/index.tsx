@@ -5,7 +5,7 @@ import SubBlogSmall from "../components/SubBlogSmall";
 import SubBlogLarge from "../components/SubBlogLarge";
 import LastBlog from "../components/LastBlog";
 import { data } from "../components/DemoData";
-import style from "./blogMain.module.scss";
+import style from "../components/blogMain.module.scss";
 
 const Blog = () => {
  

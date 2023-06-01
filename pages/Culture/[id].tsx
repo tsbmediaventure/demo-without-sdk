@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../../components/Header";
 import style from "../../components/Article.module.scss";
-import { CultureData } from "./CultureDemoData";
+import { CultureData } from "../../components/CultureDemoData";
 import { useRouter } from 'next/router'
 import Link from "next/link";
 

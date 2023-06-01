@@ -1,8 +1,8 @@
-import culture1 from "../../public/assets/blog/culture1.webp";
-import culture2 from "../../public/assets/blog/culture2.webp";
-import culture3 from "../../public/assets/blog/culture3.webp";
-import culture4 from "../../public/assets/blog/culture4.jpg";
-import culture5 from "../../public/assets/blog/culture5.jpg";
+import culture1 from "../public/assets/blog/culture1.webp";
+import culture2 from "../public/assets/blog/culture2.webp";
+import culture3 from "../public/assets/blog/culture3.webp";
+import culture4 from "../public/assets/blog/culture4.jpg";
+import culture5 from "../public/assets/blog/culture5.jpg";
 export const CultureData = [
   {
     id: 1,

@@ -72,17 +72,17 @@ const Header = (props: any) => {
           className={click ? style["nav-options-active"] : style["nav-options"]}
         >
           <li className={style["option"]} >
-            <Link href={'/Politics'}>POLITICS</Link>
+            <Link href={'/politics'}>POLITICS</Link>
           </li>
           <li className={style["option"]} >
-            <Link href={'/Business'}>BUSINESS</Link>
+            <Link href={'/business'}>BUSINESS</Link>
           </li>
           <li className={style["option"]} >
-            <Link href={'/Culture'}>CULTURE</Link>
+            <Link href={'/culture'}>CULTURE</Link>
           </li>
           <li
             className={style["option"]} >
-            <Link href={'/International'}>INTERNATIONAL</Link>
+            <Link href={'/international'}>INTERNATIONAL</Link>
           </li>
 
           <li className={style["option"]}>

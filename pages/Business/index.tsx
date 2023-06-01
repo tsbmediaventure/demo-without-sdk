@@ -1,8 +1,8 @@
 import React from "react";
-import { BusinessDemoData } from "./BusinessDemoData";
-import classes from "./Business.module.scss";
+import { BusinessDemoData } from "../../components/BusinessDemoData";
+import classes from "../../components/Business.module.scss";
 import Header from "../../components/Header";
-import BusinessFree from "./BusinessFree";
+import BusinessFree from "../../components/BusinessFree";
 
 const Business = () => {
   return (
