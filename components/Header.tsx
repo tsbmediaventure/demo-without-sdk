@@ -65,7 +65,7 @@ const Header = (props: any) => {
         className={style["header"]}
         style={{ backgroundColor: props.headerColor }}
       >
-       <Link href="/"><img src="../../assets/conscentLogo.png" alt="logo" className={style["logo-img"]} /></Link> 
+       <Link href="/"><img src="../../assets/conscentLogoNew.svg" alt="logo" className={style["logo-img"]} /></Link> 
           
         
         <ul

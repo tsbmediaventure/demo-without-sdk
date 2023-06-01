@@ -50,58 +50,7 @@ console.log(data, "data story")
       accentColor: "red",
       successCallback: async (validationObject: any) => {
         
-        
-        
-        /**
-         * example validationObject structure:
-        {
-            message: 'Story Read Confirmed',
-            payload: {
-              clientId: '5fffcf4b2a2d942cb093ea18',
-              storyId: '3',
-              transactionAmount: 3,
-              createdAt: '2021-01-18T05:34:12.658Z',
-            },
-            readId: '7c873f32-e16b-4a94-a51c-7e873ff0fb15',
-        }
-         */
-        // If possible, the following validation should be done by your backend server to avoid all tampering by the user
-        // For this, you must pass only the readId from your frontend to your backend.
-        // This example will continue validation in the frontend --
-        // The following API call is valid only ONCE. Further calls will return 401 (unauthorized) because every readId is a one-time access provided to the user.
-        const backendConfirmationResponse = await axios.post(
-          `${API_URL}/content/consumption/${validationObject.readId}`
-        );
-        const confirmationPayload = backendConfirmationResponse.data.payload;
-    
-        /**
-         *
-         * Confirmation Payload structure:
-         {
-            "message": "Story Read Confirmed",
-            "payload": {
-              "clientId": "5fffcf4b2a2d942cb093ea18",
-              "storyId": "3",
-              "transactionAmount": 0,
-              "createdAt": "2021-01-18T05:48:00.340Z"
-            },
-            "readId": "2fe99e81-52a8-4fd2-8b89-0e3b561b4da1"
-          }
-         */
-        // Validation starting
-        if (
-          backendConfirmationResponse.data.consumptionId ===
-            validationObject.consumptionId &&
-          clientId === confirmationPayload.clientId &&
-          storyId === confirmationPayload.contentId
-        ) {
-          // Validation successful
-          setPaid(true); // DO all the actions you need to do to show the user the story here
-        } else {
-          // Validation failed
-          console.error("Invalid authentication, story will not be shown");
-          // To handle this case you might want to redirect the user to your subscription page instead with a payment failed error.
-        }
+        setPaid(true);
       },
       wrappingElementId: "csc-paywall",
       fullScreenMode: "false",
@@ -116,7 +65,7 @@ console.log(data, "data story")
 
   return (
     <>
-      <Header headerColor="#fff" />
+       <Header headerColor="#fff" />
       <div className={style["main"]}>
         <p className={style["title"]}>{data?.title}</p>
         <p className={style["sub-title"]}>{data?.subTitle}</p>
@@ -144,7 +93,7 @@ console.log(data, "data story")
             humans learn from sensory information in order to acquire perceptual
             and motor skills. T
             <span
-              className={paid ? style["paragraph"] : style["blur-text-seven"]}
+              className={ style["paragraph"]}
             >
               his knowledge is used to develop computational models of human
               behavior and it has been improving over time. <br />
@@ -188,7 +137,7 @@ console.log(data, "data story")
             around again and return to Earth once the mission is completed.
           </p>
           <Link href="/">
-            <p onClick={() => window.scrollTo(0, 0)}>&lt;&lt; Back</p>
+            <p onClick={() => window.scrollTo(0, 0)}    style={{ paddingTop: "250px" }}>&lt;&lt; Back</p>
           </Link>
           <div
             style={{
@@ -198,7 +147,7 @@ console.log(data, "data story")
               ...(paid && { width: 0 }),
             }}
           >
-            <div
+             <div
               className={style["overlay"]}
               id="csc-paywall"
               style={{

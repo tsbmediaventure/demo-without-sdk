@@ -12,7 +12,10 @@
   .login-btn {
     width: 100px;
     height: 35px;
-    border: 1px blueviolet solid;
+    background: #cc0000;
+    color: white;
+    font-weight: 600;
+    border: 1px #cc0000 solid;
     border-radius: 4px;
   }
   .login-popup {
@@ -20,6 +23,7 @@
     width: -webkit-fill-available;
     background: #0e0d0d70;
     z-index: 100;
+    top: 85px;
   }
   .logo-img {
     width: 190px;

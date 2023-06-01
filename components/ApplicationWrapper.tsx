@@ -24,7 +24,7 @@ export const ApplicationWrapper = ({ children }: {
               js.async = 1;
               js.title = cid;
               fjs.parentNode.insertBefore(js, fjs);
-            })(window, document, 'script', '_csc', 'https://sandbox-sdk.conscent.in/csc-sdk.js', clientId);
+            })(window, document, 'script', '_csc', 'https://sdk.conscent.in/csc-sdk.js', clientId);
   `}
 </Script>
             <div>{children}</div>
