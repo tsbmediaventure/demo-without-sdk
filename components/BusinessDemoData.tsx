@@ -5,7 +5,7 @@ import business2 from "../public/assets/blog/business2.webp";
 import business5 from "../public/assets/blog/business5.webp";
 export const BusinessDemoData = [
   {
-    id: 1,
+    id: 'b1',
     title:
       "Loan EMIs May Go Up As RBI Announces Sixth Straight Lending Rate Hike",
     subTitle: `Most analysts had expected a hike on Wednesday to be the final increase in the RBI's current tightening cycle, which has seen it raise rates by 250 bps since May last year.`,
@@ -14,7 +14,7 @@ export const BusinessDemoData = [
     img: business1,
   },
   {
-    id: 2,
+    id: 'b2',
     title:
       "Mohammed Siraj and R Ashwin will be excited to bowl at Australian left-handers: KL Rahul ahead of Nagpur Test",
     subTitle:
@@ -24,7 +24,7 @@ export const BusinessDemoData = [
     img: business2,
   },
   {
-    id: 3,
+    id: 'b3',
     title:
       "Alternative is Trinamool Congress: Abhishek Banerjee at Tripura foot march",
     subTitle:
@@ -34,7 +34,7 @@ export const BusinessDemoData = [
     img: business3,
   },
   {
-    id: 4,
+    id: 'b4',
     title: "Shares Of Adani Enterprises Jump Nearly 15 Per Cent",
     subTitle:
       "Adani Enterprises zoomed 14.63 per cent to settle at ₹ 1,802.50 apiece. ",
@@ -43,7 +43,7 @@ export const BusinessDemoData = [
     img: business4,
   },
   {
-    id: 5,
+    id: 'b5',
     title:
       "Sorry, A Bit Late...: Zomato Founder's Tweet After Paytm's Surprise Operating Profit",
     subTitle:

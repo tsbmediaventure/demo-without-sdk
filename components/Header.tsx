@@ -82,7 +82,7 @@ const Header = (props: any) => {
           </li>
           <li
             className={style["option"]} >
-            <Link href={'/international'}>INTERNATIONAL</Link>
+            <Link href={'/premium'}>PREMIUM</Link>
           </li>
 
           <li className={style["option"]}>

@@ -6,7 +6,7 @@ import International5 from "../public/assets/blog/International5.webp";
 
 export const InternationalData = [
   {
-    id: 1,
+    id: 'v1',
     title:
       "Biden's State of Union address: What he said on Chinese aggression, US economy and police brutality ",
     subTitle: `President Joe Biden delivered his second State of the Union address. In his 73-minute speech, he spoke on a range of issues, including US-China relations, the US economy, the`,
@@ -15,7 +15,7 @@ export const InternationalData = [
     img: International1,
   },
   {
-    id: 2,
+    id: 'v2',
     title: "Rishi Sunak shuffles UK's cabinet, announces 4 new departments",
     subTitle:
       "Britain's Prime Minister Rishi Sunak has shuffled his cabinet. With his prime focus on the economy, Sunak has created a new department for Energy Security and Net Zero.",
@@ -24,7 +24,7 @@ export const InternationalData = [
     img: International2,
   },
   {
-    id: 3,
+    id: 'v3',
     title:
       "3.2 tonnes of cocaine, enough to supply market for 30 years, found floating at sea in New Zealand",
     subTitle:
@@ -34,7 +34,7 @@ export const InternationalData = [
     img: International3,
   },
   {
-    id: 4,
+    id: 'v4',
     title:
       "Hundreds attend Pakistan’s former President Pervez Musharraf's funeral",
     subTitle:
@@ -44,7 +44,7 @@ export const InternationalData = [
     img: International4,
   },
   {
-    id: 5,
+    id: 'v5',
     title:
       "At least 15 killed in Peru landslide, president pledges to speed up help",
     subTitle:

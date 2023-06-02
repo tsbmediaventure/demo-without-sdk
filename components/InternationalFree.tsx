@@ -6,7 +6,7 @@ const InternationalFree = (props: any) => {
   const data = props.passData;
   const router = useRouter()
 const handleClick = ((e: any , id : string)=>{
-  router.push(`/international/${id}`)
+  router.push(`/premium/${id}`)
 })
 
   
