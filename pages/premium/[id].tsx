@@ -20,7 +20,7 @@ const InternationalArticle = () => {
     if(id&&!calledOnce){
       setCalledOnce(true)
       // console.log(id,'ljhgc')
-      paywallId()
+      // paywallId()
     }  
   },[calledOnce,id])
     
@@ -44,24 +44,24 @@ const InternationalArticle = () => {
   const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
   const storyId = data?.id?.toString() ; 
 
-  const paywallId = () =>{
-    console.log( "new paywall function")
-    //@ts-ignore
-    const csc = window._csc as any;
-    csc("init", {
-      debug: true,
-      contentId: data?.id, // your story id here
-      clientId: clientId, // your clientID here
-      title:data.title,
+  // const paywallId = () =>{
+  //   console.log( "new paywall function")
+  //   //@ts-ignore
+  //   const csc = window._csc as any;
+  //   csc("init", {
+  //     debug: true,
+  //     contentId: data?.id, // your story id here
+  //     clientId: clientId, // your clientID here
+  //     title:data.title,
     
-      successCallback: async (validationObject: any) => {
+  //     successCallback: async (validationObject: any) => {
         
-        setPaid(true);
-      },
-      wrappingElementId: "csc-paywall",
-      fullScreenMode: "false",
-    });
-  }
+  //       setPaid(true);
+  //     },
+  //     wrappingElementId: "csc-paywall",
+  //     fullScreenMode: "false",
+  //   });
+  // }
   
   
   // useEffect(() => {
@@ -155,7 +155,7 @@ const InternationalArticle = () => {
           >
              <div
               className={style["overlay"]}
-              id="csc-paywall"
+              // id="csc-paywall"
               style={{
                 ...(paid && { width: 0 }),
               }}

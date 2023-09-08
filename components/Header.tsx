@@ -11,53 +11,53 @@ const Header = (props: any) => {
   const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
  
 
-  const renderlogin = () => {
-    console.log("button clicked");
+  // const renderlogin = () => {
+    // console.log("button clicked");
     // @ts-ignore
-    const csc = window._csc as any;
+    // const csc = window._csc as any;
 
-    csc("conscent-login", {
-      debug: true,
-      clientId: clientId,
-      defaultEmail: "",
-      defaultName: "",
-      defaultPhone: "",
-      wrappingElementId: "embed",
-      successCallback: async (userDetailsObject: any) => {
-        console.log(
-          "Success callback received from conscent login",
-          userDetailsObject
-        );
+    // csc("conscent-login", {
+    //   debug: true,
+    //   clientId: clientId,
+    //   defaultEmail: "",
+    //   defaultName: "",
+    //   defaultPhone: "",
+    //   wrappingElementId: "embed",
+    //   successCallback: async (userDetailsObject: any) => {
+    //     console.log(
+    //       "Success callback received from conscent login",
+    //       userDetailsObject
+    //     );
        
 
-        setIsLogin(true);
-      },
-      onCrossBtnClickSuccess: async () => {
-        console.log("cross btn click successfully");
+    //     setIsLogin(true);
+    //   },
+    //   onCrossBtnClickSuccess: async () => {
+    //     console.log("cross btn click successfully");
     
-      },
-      unauthorizedCallback: () => {
-        console.log("unauthorized callback called");
-      },
-    });
-  };
+    //   },
+    //   unauthorizedCallback: () => {
+    //     console.log("unauthorized callback called");
+    //   },
+    // });
+  // };
   
-  const logout = () => {
-    // @ts-ignore
-    const csc = window._csc as any;
-    csc("logout", {
-      debug: true,
-      clientId: clientId,
-      wrappingElementId: "embed",
-      logoutCallback: async () => {
-        alert("logout successful");
-        window.location.reload();
-      },
-      unauthorizedCallback: () => {
-        console.log("unauthorized callback called");
-      },
-    });
-  };
+  // const logout = () => {
+  //   // @ts-ignore
+  //   const csc = window._csc as any;
+  //   csc("logout", {
+  //     debug: true,
+  //     clientId: clientId,
+  //     wrappingElementId: "embed",
+  //     logoutCallback: async () => {
+  //       alert("logout successful");
+  //       window.location.reload();
+  //     },
+  //     unauthorizedCallback: () => {
+  //       console.log("unauthorized callback called");
+  //     },
+  //   });
+  // };
 
   return (
     <>
@@ -88,7 +88,7 @@ const Header = (props: any) => {
           <li className={style["option"]}>
             <button
               className={style["login-btn"]}
-              onClick={isLogin ? logout : renderlogin}
+              // onClick={isLogin ? logout : renderlogin}
             >
               {isLogin ? "LOGOUT" : "LOGIN"}
             </button>
